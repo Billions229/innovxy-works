@@ -31,10 +31,12 @@ export function ProcessusSection() {
   ]
 
   return (
-    <FeatureSteps
-      features={etapes}
-      title="4 Étapes Efficaces"
-      autoPlayInterval={5000}
-    />
+    <div id="processus">
+      <FeatureSteps
+        features={etapes}
+        title="4 Étapes Efficaces"
+        autoPlayInterval={5000}
+      />
+    </div>
   )
 }

@@ -51,9 +51,11 @@ export function ProjetsRecentsSection() {
   ]
 
   return (
-    <Gallery6
-      heading="Nos Réalisations Récentes"
-      items={projets}
-    />
+    <div id="projets">
+      <Gallery6
+        heading="Nos Réalisations Récentes"
+        items={projets}
+      />
+    </div>
   )
 }

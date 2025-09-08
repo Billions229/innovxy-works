@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, User, Briefcase, FileText, Phone, DollarSign } from 'lucide-react'
+import { Home, Briefcase, FileText, Phone, DollarSign } from 'lucide-react'
 import { NavBar } from "@/components/ui/tubelight-navbar"
 
 /**
@@ -13,7 +13,6 @@ export function InnovxyNavbar() {
     { name: 'Projets', url: '#projets', icon: Briefcase },
     { name: 'Processus', url: '#processus', icon: FileText },
     { name: 'Tarifs', url: '#tarifs', icon: DollarSign },
-    { name: 'À propos', url: '#about', icon: User },
     { name: 'Contact', url: '#contact', icon: Phone }
   ]
 

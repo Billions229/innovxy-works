@@ -8,8 +8,10 @@ import EnhancedBackgroundPaths from "@/components/ui/modern-background-paths"
  */
 export function HeroSection() {
   return (
-    <EnhancedBackgroundPaths
-      title=" Votre business, boosté digitalement"
-    />
+    <div id="hero">
+      <EnhancedBackgroundPaths
+        title=" Votre business, boosté digitalement"
+      />
+    </div>
   )
 }
