@@ -8,14 +8,15 @@ import { useState, useEffect } from "react"
 function GeometricPaths() {
   const gridSize = 40
   const paths = []
-  
+
+  // Use deterministic pattern instead of Math.random() to avoid hydration issues
   for (let x = 0; x < 20; x++) {
     for (let y = 0; y < 12; y++) {
-      if (Math.random() > 0.7) {
+      if ((x + y) % 3 === 0) { // Deterministic pattern
         paths.push({
           id: `grid-${x}-${y}`,
           d: `M${x * gridSize},${y * gridSize} L${(x + 1) * gridSize},${y * gridSize} L${(x + 1) * gridSize},${(y + 1) * gridSize} L${x * gridSize},${(y + 1) * gridSize} Z`,
-          delay: Math.random() * 5,
+          delay: (x + y) * 0.2, // Deterministic delay
         })
       }
     }
@@ -93,9 +94,10 @@ function FlowPaths() {
 
 // Neural Network Paths
 function NeuralPaths() {
+  // Use deterministic positions to avoid hydration issues
   const nodes = Array.from({ length: 50 }, (_, i) => ({
-    x: Math.random() * 800,
-    y: Math.random() * 600,
+    x: (i * 137.5) % 800, // Deterministic x position
+    y: (i * 73.2) % 600,  // Deterministic y position
     id: `node-${i}`
   }))
 
@@ -104,14 +106,14 @@ function NeuralPaths() {
     const nearbyNodes = nodes.filter((other, j) => {
       if (i === j) return false
       const distance = Math.sqrt(Math.pow(node.x - other.x, 2) + Math.pow(node.y - other.y, 2))
-      return distance < 120 && Math.random() > 0.6
+      return distance < 120 && (i + j) % 3 === 0 // Deterministic connection
     })
-    
+
     nearbyNodes.forEach(target => {
       connections.push({
         id: `conn-${i}-${target.id}`,
         d: `M${node.x},${node.y} L${target.x},${target.y}`,
-        delay: Math.random() * 10
+        delay: (i * 0.5) % 10 // Deterministic delay
       })
     })
   })
@@ -255,24 +257,7 @@ export default function EnhancedBackgroundPaths({
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-white/60 dark:from-slate-900/60 dark:via-transparent dark:to-slate-900/60" />
 
-      {/* Pattern Indicator */}
-      <div className="absolute top-8 right-8 flex gap-2 z-20">
-        {patterns.map((_, i) => (
-          <motion.div
-            key={i}
-            className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-              i === currentPattern 
-                ? 'bg-slate-800 dark:bg-white' 
-                : 'bg-slate-300 dark:bg-slate-600'
-            }`}
-            animate={{ 
-              scale: i === currentPattern ? 1.2 : 1,
-              opacity: i === currentPattern ? 1 : 0.5
-            }}
-            transition={{ duration: 0.3 }}
-          />
-        ))}
-      </div>
+
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
@@ -318,9 +303,9 @@ export default function EnhancedBackgroundPaths({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
-              className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 font-light tracking-wide max-w-2xl mx-auto"
+              className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 font-light tracking-wide max-w-2xl mx-auto mt-8"
             >
-              Experience the future of interactive design with dynamic pattern generation
+              Transformez votre idée en application mobile performante ou site web professionnel avec une UX fluide, une architecture scalable et un design axé conversion.
             </motion.p>
           </div>
 
@@ -347,7 +332,7 @@ export default function EnhancedBackgroundPaths({
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <span className="relative">
-                    Explore Patterns
+                    Obtenez un MVP
                     <motion.span
                       className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"
                       initial={{ width: 0 }}
@@ -366,15 +351,7 @@ export default function EnhancedBackgroundPaths({
             </div>
           </motion.div>
 
-          {/* Pattern Info */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 2, duration: 1 }}
-            className="mt-12 text-sm text-slate-500 dark:text-slate-400 font-mono tracking-wider"
-          >
-            Current Pattern: <span className="text-slate-700 dark:text-slate-200 font-semibold capitalize">{patterns[currentPattern]}</span>
-          </motion.div>
+
         </motion.div>
       </div>
 

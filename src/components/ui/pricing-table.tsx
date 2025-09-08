@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { CheckIcon } from 'lucide-react';
+import { CheckIcon, LucideIcon } from 'lucide-react';
 import { Badge } from './badge';
 
 function PricingTable({ className, ...props }: React.ComponentProps<'table'>) {
@@ -79,6 +79,7 @@ function PricingTableCaption({
 
 interface PricingCardProps {
 	title: string;
+	icon?: LucideIcon;
 	price: string;
 	description?: string;
 	features: string[];
@@ -90,6 +91,7 @@ interface PricingCardProps {
 
 function PricingCard({
 	title,
+	icon: Icon,
 	price,
 	description,
 	features,
@@ -113,6 +115,11 @@ function PricingCard({
 			)}
 			
 			<div className="text-center">
+				{Icon && (
+					<div className="w-12 h-12 mx-auto mb-4 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+						<Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+					</div>
+				)}
 				<h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
 					{title}
 				</h3>

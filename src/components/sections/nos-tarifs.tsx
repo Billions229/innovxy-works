@@ -2,6 +2,7 @@
 
 import { PricingCard } from "@/components/ui/pricing-table"
 import { useState } from "react"
+import { Palette, ShoppingCart, Zap, Smartphone, Building2, Crown } from "lucide-react"
 
 /**
  * Section Nos Tarifs pour InnovxyWorks
@@ -12,7 +13,8 @@ export function NosTarifsSection() {
 
   const webPackages = [
     {
-      title: "🎨 Site Vitrine Pro",
+      title: "Site Vitrine Pro",
+      icon: Palette,
       price: "1 487€",
       description: "Parfait pour les entreprises qui veulent une présence web professionnelle",
       features: [
@@ -30,7 +32,8 @@ export function NosTarifsSection() {
       isPopular: false
     },
     {
-      title: "🛒 E-commerce Avancé",
+      title: "E-commerce Avancé",
+      icon: ShoppingCart,
       price: "2 987€",
       description: "Solution complète pour vendre en ligne avec toutes les fonctionnalités",
       features: [
@@ -48,7 +51,8 @@ export function NosTarifsSection() {
       isPopular: true
     },
     {
-      title: "🚀 Plateforme Custom",
+      title: "Plateforme Custom",
+      icon: Zap,
       price: "4 987€",
       description: "Développement sur mesure pour des besoins spécifiques et complexes",
       features: [
@@ -69,7 +73,8 @@ export function NosTarifsSection() {
 
   const mobilePackages = [
     {
-      title: "📱 App Native Starter",
+      title: "App Native Starter",
+      icon: Smartphone,
       price: "2 987€",
       description: "Application mobile native pour iOS et Android",
       features: [
@@ -87,7 +92,8 @@ export function NosTarifsSection() {
       isPopular: false
     },
     {
-      title: "⚡ App Business Pro",
+      title: "App Business Pro",
+      icon: Building2,
       price: "5 987€",
       description: "Application mobile avancée avec fonctionnalités business",
       features: [
@@ -105,7 +111,8 @@ export function NosTarifsSection() {
       isPopular: true
     },
     {
-      title: "🏢 App Enterprise",
+      title: "App Enterprise",
+      icon: Crown,
       price: "9 987€",
       description: "Solution enterprise avec architecture microservices",
       features: [

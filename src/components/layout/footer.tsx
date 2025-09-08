@@ -1,7 +1,8 @@
 "use client"
 
-import { Smartphone, Github, Twitter, Linkedin, Mail, Phone } from "lucide-react"
+import { Github, Twitter, Linkedin, Mail, Phone } from "lucide-react"
 import { Footer } from "@/components/ui/footer"
+import Image from "next/image"
 
 /**
  * Footer principal pour InnovxyWorks
@@ -10,7 +11,14 @@ import { Footer } from "@/components/ui/footer"
 export function InnovxyFooter() {
   return (
     <Footer
-      logo={<Smartphone className="h-10 w-10 text-blue-600" />}
+      logo={
+        <Image
+          src="/logo.png"
+          alt="InnovxyWorks Logo"
+          width={40}
+          height={40}
+        />
+      }
       brandName="InnovxyWorks"
       socialLinks={[
         {
@@ -53,7 +61,7 @@ export function InnovxyFooter() {
         { href: "/cookies", label: "Politique des cookies" },
       ]}
       copyright={{
-        text: "© 2024 InnovxyWorks",
+        text: "© 2025 InnovxyWorks",
         license: "Tous droits réservés",
       }}
     />
