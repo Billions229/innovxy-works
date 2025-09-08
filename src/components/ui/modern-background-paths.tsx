@@ -52,7 +52,7 @@ function GeometricPaths() {
 function FlowPaths() {
   const flowPaths = Array.from({ length: 12 }, (_, i) => {
     const amplitude = 50 + i * 10
-    const frequency = 0.01 + i * 0.002
+    // const frequency = 0.01 + i * 0.002 // Unused for now
     const offset = i * 60
     
     return {
@@ -99,7 +99,7 @@ function NeuralPaths() {
     id: `node-${i}`
   }))
 
-  const connections = []
+  const connections: Array<{id: string, d: string, delay: number}> = []
   nodes.forEach((node, i) => {
     const nearbyNodes = nodes.filter((other, j) => {
       if (i === j) return false
