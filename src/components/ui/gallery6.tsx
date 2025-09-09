@@ -209,6 +209,40 @@ const Gallery6 = ({
             ))}
           </div>
         </div>
+
+        {/* Call to Action Section */}
+        <div className="text-center mt-16 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+              Prêt à transformer votre idée en succès ?
+            </h3>
+            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
+              Rejoignez nos clients satisfaits et donnez vie à votre projet avec notre expertise technique et notre approche centrée sur les résultats.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+                onClick={() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
+                Démarrer mon projet
+                <ArrowUpRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="px-8 py-3 rounded-lg font-semibold border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300"
+                onClick={() => {
+                  document.getElementById('tarifs')?.scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
+                Voir nos tarifs
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

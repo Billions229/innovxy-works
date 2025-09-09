@@ -484,3 +484,129 @@ Steps to integrate
  1. Install external dependencies
  2. Fill image assets with Unsplash stock images you know exist
  3. Use lucide-react icons for svgs or logos if component requires them
+
+
+# Tableau des Tarifs Freelancers pour la Création de Sites Web
+
+## Comparaison des Prix sur les 3 Plateformes (2025)
+
+| Type de Site Web | Fiverr | Upwork | ComeUp |
+|------------------|--------|--------|--------|
+| **Site Vitrine Simple** | 50€ - 500€ | 300€ - 1500€ | 5€ - 300€ |
+| **Site Vitrine Premium** | 200€ - 1500€ | 800€ - 3000€ | 100€ - 800€ |
+| **Site WordPress Basique** | 100€ - 800€ | 500€ - 2000€ | 25€ - 500€ |
+| **Site WordPress Avancé** | 400€ - 2000€ | 1000€ - 5000€ | 200€ - 1200€ |
+| **Site E-commerce Simple** | 300€ - 1500€ | 1000€ - 4000€ | 100€ - 800€ |
+| **Site E-commerce Complet** | 800€ - 5000€ | 2000€ - 15000€ | 400€ - 3000€ |
+| **Site E-commerce Enterprise** | 2000€ - 15000€ | 5000€ - 50000€ | 1000€ - 10000€ |
+| **Site E-learning Basique** | 500€ - 2000€ | 1500€ - 6000€ | 200€ - 1500€ |
+| **Site E-learning Avancé** | 1500€ - 8000€ | 3000€ - 20000€ | 800€ - 5000€ |
+| **Landing Page** | 25€ - 300€ | 200€ - 1000€ | 5€ - 200€ |
+| **Site Portfolio** | 100€ - 800€ | 400€ - 2000€ | 50€ - 500€ |
+| **Site Corporate** | 800€ - 5000€ | 2000€ - 12000€ | 400€ - 3000€ |
+| **Blog/Magazine** | 200€ - 1500€ | 600€ - 3000€ | 100€ - 800€ |
+| **Site Multilingue** | 400€ - 3000€ | 1000€ - 8000€ | 200€ - 2000€ |
+| **Application Web** | 1000€ - 10000€ | 3000€ - 25000€ | 500€ - 8000€ |
+
+---
+
+## Détails par Plateforme
+
+### **FIVERR**
+- **Tarif horaire moyen** : 15€ - 50€/h
+- **Prix minimum** : 5€ (services de base)
+- **Spécialités** : Solutions rapides, templates, petits projets
+- **Avantages** : Prix compétitifs, livraison rapide
+- **Inconvénients** : Qualité variable, communication parfois limitée
+
+### **UPWORK**
+- **Tarif horaire moyen** : 20€ - 80€/h
+- **Développeurs Web** : Médiane à 28€/h (15€ - 47€)
+- **Web Designers** : Médiane à 20€/h (14€ - 28€)
+- **Front-End** : Médiane à 24€/h (14€ - 33€)
+- **Back-End** : Médiane à 24€/h (19€ - 38€)
+- **Spécialités** : Projets complexes, développeurs expérimentés
+- **Avantages** : Professionnels vérifiés, gestion de projet avancée
+- **Inconvénients** : Plus cher, processus de sélection plus long
+
+### **COMEUP (ex-5euros)**
+- **Tarif horaire moyen** : 10€ - 40€/h
+- **Prix minimum** : 5€
+- **Commission** : 1€ fixe (quel que soit le montant)
+- **Spécialités** : Marché français, microservices
+- **Avantages** : Commission faible, support en français
+- **Inconvénients** : Moins de choix que les plateformes internationales
+
+---
+
+## Types de Sites Web - Descriptions et Complexité
+
+### **Sites Vitrine**
+- **Simple** : 5-10 pages, design template, contact basique
+- **Premium** : Design personnalisé, animations, SEO optimisé
+
+### **Sites E-commerce**
+- **Simple** : 10-50 produits, paiement basique, gestion stocks simple
+- **Complet** : 100+ produits, multi-devises, intégrations avancées
+- **Enterprise** : Milliers de produits, ERP, multi-sites, B2B/B2C
+
+### **Sites E-learning**
+- **Basique** : Cours vidéo, quiz simples, certificats
+- **Avancé** : Parcours adaptatifs, gamification, analytics, mobile app
+
+### **Applications Web**
+- **SaaS** : Tableau de bord, gestion utilisateurs, API
+- **Marketplace** : Multi-vendeurs, commissions, modération
+- **Plateforme sociale** : Profils, messagerie, feed temps réel
+
+---
+
+## Facteurs Influençant les Prix
+
+### **Complexité Technique**
+- Intégrations API tierces
+- Fonctionnalités personnalisées
+- Responsive design
+- Optimisation performance
+
+### **Design**
+- Template vs Design sur-mesure
+- Nombre de pages
+- Animations et interactions
+- Identité visuelle complète
+
+### **Fonctionnalités**
+- Système de paiement
+- Espace membre/client
+- Multilingue
+- SEO avancé
+- Analytics et tracking
+
+### **Maintenance et Support**
+- Formation utilisateur
+- Documentation
+- Support technique
+- Mises à jour de sécurité
+
+---
+
+## Conseils pour Bien Choisir
+
+### **Budget Serré (< 500€)**
+- **Recommandé** : ComeUp ou Fiverr
+- **Type** : Sites vitrine simples, landing pages
+- **Attention** : Vérifier portfolio et avis clients
+
+### **Budget Moyen (500€ - 3000€)**
+- **Recommandé** : Upwork ou Fiverr Pro
+- **Type** : Sites WordPress, e-commerce simple
+- **Focus** : Expérience du freelancer, références
+
+### **Budget Élevé (> 3000€)**
+- **Recommandé** : Upwork (Top Rated)
+- **Type** : Projets complexes, applications web
+- **Important** : Portfolio solide, spécialisation métier
+
+---
+
+*Tableau mis à jour en septembre 2025 - Les prix peuvent varier selon l'expérience du freelancer, la complexité du projet et les délais de livraison.*

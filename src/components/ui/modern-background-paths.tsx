@@ -320,6 +320,9 @@ export default function EnhancedBackgroundPaths({
               <Button
                 variant="ghost"
                 size="lg"
+                onClick={() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                }}
                 className="relative rounded-[14px] px-12 py-6 text-lg font-semibold
                             bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800
                             text-slate-900 dark:text-white transition-all duration-300
