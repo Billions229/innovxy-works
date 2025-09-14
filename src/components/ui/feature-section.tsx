@@ -49,14 +49,14 @@ export function FeatureSteps({
   }
 
   return (
-    <section className={cn("py-24 bg-slate-50 dark:bg-slate-900", className)}>
+  <section className={cn("py-24 bg-slate-900", className)}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             {title}
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+          <p className="text-lg text-slate-300 max-w-3xl mx-auto">
             Notre processus éprouvé pour transformer votre idée en succès digital
           </p>
         </div>
@@ -70,8 +70,8 @@ export function FeatureSteps({
                 className={cn(
                   "relative p-6 rounded-2xl cursor-pointer transition-all duration-300 border-2",
                   currentFeature === index
-                    ? "bg-white dark:bg-slate-800 border-blue-500 shadow-lg"
-                    : "bg-white/50 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md"
+                    ? "bg-slate-800 border-blue-500 shadow-lg"
+                    : "bg-slate-800/50 border-slate-700 hover:bg-slate-800 hover:shadow-md"
                 )}
                 onClick={() => handleFeatureClick(index)}
                 whileHover={{ scale: 1.02 }}

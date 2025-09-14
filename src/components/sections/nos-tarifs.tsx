@@ -146,25 +146,25 @@ export function NosTarifsSection() {
   const currentPackages = activeCategory === 'web' ? webPackages : mobilePackages
 
   return (
-    <section id="tarifs" className="py-24 bg-slate-50 dark:bg-slate-900">
+  <section id="tarifs" className="py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Nos Tarifs
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
+          <p className="text-lg text-slate-300 max-w-3xl mx-auto mb-8">
             Des packages adaptés à tous vos besoins, du site vitrine à l&apos;application enterprise
           </p>
 
           {/* Category Toggle */}
-          <div className="inline-flex bg-white dark:bg-slate-800 rounded-lg p-1 shadow-sm border border-slate-200 dark:border-slate-700">
+          <div className="inline-flex bg-slate-800 rounded-lg p-1 shadow-sm border border-slate-700">
             <button
               onClick={() => setActiveCategory('web')}
               className={`px-6 py-2 rounded-md font-semibold transition-all ${
                 activeCategory === 'web'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                  : 'text-slate-300 hover:text-white'
               }`}
             >
               🌐 Sites Web
@@ -174,7 +174,7 @@ export function NosTarifsSection() {
               className={`px-6 py-2 rounded-md font-semibold transition-all ${
                 activeCategory === 'mobile'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                  : 'text-slate-300 hover:text-white'
               }`}
             >
               📱 Applications Mobiles
