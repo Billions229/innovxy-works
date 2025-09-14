@@ -69,7 +69,7 @@ export function ContactForm({
 
   return (
     <Card
-      className={`bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border-white/30 dark:border-slate-700/50 shadow-2xl ${className}`}
+  className={`bg-slate-800/90 backdrop-blur-sm border-slate-700/50 shadow-2xl ${className}`}
     >
       <CardHeader className="pb-6">
         <CardTitle className="flex items-center gap-3 text-2xl font-bold">
@@ -79,7 +79,7 @@ export function ContactForm({
           Parlez-nous de votre projet
         </CardTitle>
         {selectedDate && selectedTime && (
-          <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
+          <div className="mt-4 p-4 bg-gradient-to-r from-blue-900/20 to-indigo-900/20 rounded-xl border border-blue-800">
             <div className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
               <Calendar className="w-4 h-4" />
               <span className="font-semibold">Consultation prévue le </span>

@@ -7,7 +7,7 @@ function PricingTable({ className, ...props }: React.ComponentProps<'table'>) {
 	return (
 		<div
 			data-slot="table-container"
-			className="relative w-full overflow-x-auto"
+				className="relative w-full overflow-x-auto bg-slate-900"
 		>
 			<table className={cn('w-full text-sm', className)} {...props} />
 		</div>
@@ -25,7 +25,7 @@ function PricingTableBody({
 	return (
 		<tbody
 			data-slot="table-body"
-			className={cn('[&_tr]:divide-x [&_tr]:border-b', className)}
+				className={cn('[&_tr]:divide-x [&_tr]:border-b text-white', className)}
 			{...props}
 		/>
 	);
@@ -42,10 +42,10 @@ function PricingTableHead({
 	return (
 		<th
 			data-slot="table-head"
-			className={cn(
-				'h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0',
-				className
-			)}
+				className={cn(
+					'h-12 px-4 text-left align-middle font-medium text-white [&:has([role=checkbox])]:pr-0',
+					className
+				)}
 			{...props}
 		/>
 	);
@@ -58,7 +58,7 @@ function PricingTableCell({
 	return (
 		<td
 			data-slot="table-cell"
-			className={cn('p-4 align-middle [&:has([role=checkbox])]:pr-0', className)}
+				className={cn('p-4 align-middle text-white [&:has([role=checkbox])]:pr-0', className)}
 			{...props}
 		/>
 	);
@@ -71,7 +71,7 @@ function PricingTableCaption({
 	return (
 		<caption
 			data-slot="table-caption"
-			className={cn('mt-4 text-sm text-muted-foreground', className)}
+				className={cn('mt-4 text-sm text-slate-300', className)}
 			{...props}
 		/>
 	);

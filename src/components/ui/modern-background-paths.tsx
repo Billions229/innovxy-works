@@ -240,9 +240,9 @@ export default function EnhancedBackgroundPaths({
   }
 
   return (
-  <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 dark:bg-black pt-20">
+  <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 bg-black pt-20">
       {/* Dynamic Background Patterns */}
-      <div className="absolute inset-0 text-slate-600 dark:text-slate-400">
+  <div className="absolute inset-0 text-slate-400">
         <motion.div
           key={currentPattern}
           initial={{ opacity: 0 }}
@@ -255,7 +255,7 @@ export default function EnhancedBackgroundPaths({
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-white/60 dark:from-slate-900/60 dark:via-transparent dark:to-slate-900/60" />
+  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-slate-900/60" />
 
 
 
