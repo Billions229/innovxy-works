@@ -28,12 +28,12 @@ function Calendar({
       head_cell: "text-slate-400 rounded-md w-9 font-normal text-[0.8rem]",
       row: "flex w-full mt-2",
       cell: "h-9 w-9 text-center text-sm p-0 relative first:rounded-l-md last:rounded-r-md focus-within:relative focus-within:z-20",
-      day: "relative flex size-9 items-center justify-center whitespace-nowrap rounded-lg p-0 text-white outline-offset-2 focus:outline-none focus-visible:z-10 hover:bg-blue-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-700 group-data-[disabled]:pointer-events-none group-data-[disabled]:text-slate-500 group-data-[disabled]:line-through group-data-[outside]:text-slate-500",
-      day_selected: "bg-blue-700 text-white hover:bg-blue-800 hover:text-white focus:bg-blue-700 focus:text-white",
-      day_today: "bg-slate-700 text-white",
-      day_outside: "text-slate-500 opacity-50",
-      day_disabled: "text-slate-500 opacity-50",
-      day_range_middle: "bg-slate-800 text-white",
+  day: "relative flex size-9 items-center justify-center whitespace-nowrap rounded-lg p-0 text-white outline-offset-2 focus:outline-none focus-visible:z-10 hover:bg-blue-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 group-data-[disabled]:pointer-events-none group-data-[disabled]:text-slate-500 group-data-[disabled]:line-through group-data-[outside]:text-slate-500",
+  day_selected: "bg-blue-600 text-white hover:bg-blue-700 focus:bg-blue-700 focus:text-white border-2 border-blue-400",
+  day_today: "bg-cyan-700 text-white border-2 border-cyan-400",
+  day_outside: "text-slate-500 opacity-50",
+  day_disabled: "text-slate-500 opacity-50",
+  day_range_middle: "bg-blue-900 text-white",
       day_hidden: "invisible",
   };
 

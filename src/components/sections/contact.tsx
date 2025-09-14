@@ -90,7 +90,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden"
+      className="relative py-24 bg-slate-900 text-white overflow-hidden"
     >
       {/* Background decoration */}
   <div className="absolute inset-0 bg-grid-slate-800/25 [mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]" />

@@ -117,7 +117,7 @@ const Gallery6 = ({
             <CarouselContent className="-ml-2 md:-ml-4">
               {items.map((item) => (
                 <CarouselItem key={item.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                  <div className="group relative overflow-hidden rounded-2xl bg-slate-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-700">
                     {/* Image */}
                     <div className="relative overflow-hidden h-48">
                       <Image
@@ -212,7 +212,7 @@ const Gallery6 = ({
 
         {/* Call to Action Section */}
         <div className="text-center mt-16 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
+          <div className="bg-slate-800 rounded-2xl p-8 border border-slate-600">
             <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">
               Prêt à transformer votre idée en succès ?
             </h3>
