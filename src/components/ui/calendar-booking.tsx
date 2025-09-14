@@ -50,8 +50,8 @@ export function CalendarBooking({
       {/* Sélection de date et heure */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Calendrier */}
-        <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700">
-          <CardContent className="p-6">
+        <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700 w-full">
+          <CardContent className="p-0">
             <div className="flex items-center gap-2 mb-4">
               <CalendarIcon className="w-5 h-5 text-blue-400" />
               <h3 className="font-extrabold text-white text-lg">
@@ -71,7 +71,7 @@ export function CalendarBooking({
               modifiersClassNames={{
                 booked: "[&>button]:line-through opacity-50",
               }}
-              className="bg-transparent p-0 [--cell-size:--spacing(10)] md:[--cell-size:--spacing(12)] [&_button]:cursor-pointer"
+              className="bg-transparent w-full p-0 [--cell-size:--spacing(10)] md:[--cell-size:--spacing(12)] [&_button]:cursor-pointer"
               formatters={{
                 formatWeekdayName: (date) => {
                   return date.toLocaleString("fr-FR", { weekday: "short" });
@@ -114,18 +114,18 @@ export function CalendarBooking({
 
       {/* Résumé de la sélection */}
       {date && selectedTime && (
-        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-blue-200 dark:border-blue-800">
+        <Card className="bg-slate-800 text-white border border-blue-800">
           <CardContent className="p-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-blue-600" />
+              <div className="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-blue-400" />
               </div>
               <div>
-                <h4 className="font-semibold text-slate-900 dark:text-white mb-1">
+                <h4 className="font-extrabold text-white mb-1">
                   Consultation sélectionnée
                 </h4>
-                <p className="text-slate-600 dark:text-slate-300">
-                  <span className="font-medium">
+                <p className="text-white/90">
+                  <span className="font-bold">
                     {date.toLocaleDateString("fr-FR", {
                       weekday: "long",
                       day: "numeric",
@@ -133,7 +133,7 @@ export function CalendarBooking({
                       year: "numeric",
                     })}
                   </span>{" "}
-                  à <span className="font-medium">{selectedTime}</span>
+                  à <span className="font-bold">{selectedTime}</span>
                 </p>
               </div>
             </div>

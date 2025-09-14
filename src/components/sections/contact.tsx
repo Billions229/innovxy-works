@@ -150,7 +150,7 @@ export function ContactSection() {
 
         {/* Steps Indicator */}
         <div className="flex justify-center mb-12">
-          <div className="flex items-center space-x-4 p-4 rounded-2xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border border-white/20 dark:border-slate-700/50 shadow-lg">
+          <div className="flex items-center space-x-4 p-4 rounded-2xl bg-slate-800 text-white border border-slate-700 shadow-lg">
             <div
               className={`flex items-center space-x-3 transition-all duration-300 ${
                 step === "calendar"

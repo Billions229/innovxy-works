@@ -53,10 +53,10 @@ export function FeatureSteps({
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white sm:text-white text-white">
             {title}
           </h2>
-          <p className="text-lg text-slate-300 max-w-3xl mx-auto">
+          <p className="text-lg text-slate-300 max-w-3xl mx-auto sm:text-white text-white">
             Notre processus éprouvé pour transformer votre idée en succès digital
           </p>
         </div>
@@ -98,7 +98,7 @@ export function FeatureSteps({
                   <div className="flex-1">
                     {/* Step Title */}
                     <h3 className={cn(
-                      "text-xl font-bold mb-2 transition-colors",
+                      "text-xl font-bold mb-2 transition-colors sm:text-white text-white",
                       currentFeature === index
                         ? "text-blue-600 dark:text-blue-400"
                         : "text-slate-900 dark:text-white"
@@ -107,7 +107,7 @@ export function FeatureSteps({
                     </h3>
 
                     {/* Step Content */}
-                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed sm:text-white text-white">
                       {feature.content}
                     </p>
                   </div>

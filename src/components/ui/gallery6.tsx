@@ -178,7 +178,7 @@ const Gallery6 = ({
             <Button
               variant="outline"
               size="icon"
-              className="absolute left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800"
+              className="absolute left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-slate-800 text-blue-400 border-blue-700 hover:bg-blue-900 hover:text-white transition-all duration-300"
               onClick={() => api?.scrollPrev()}
             >
               <ArrowLeft className="h-4 w-4" />
@@ -187,7 +187,7 @@ const Gallery6 = ({
             <Button
               variant="outline"
               size="icon"
-              className="absolute right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800"
+              className="absolute right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-slate-800 text-blue-400 border-blue-700 hover:bg-blue-900 hover:text-white transition-all duration-300"
               onClick={() => api?.scrollNext()}
             >
               <ArrowRight className="h-4 w-4" />
