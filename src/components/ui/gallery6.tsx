@@ -92,14 +92,14 @@ const Gallery6 = ({
   }, [api]);
 
   return (
-    <section className="py-24 bg-white dark:bg-slate-900">
+  <section className="py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             {heading}
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+          <p className="text-lg text-slate-300 max-w-3xl mx-auto">
             Découvrez quelques-uns de nos projets qui ont transformé des idées en succès digitaux
           </p>
         </div>

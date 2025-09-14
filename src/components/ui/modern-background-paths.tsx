@@ -284,11 +284,7 @@ export default function EnhancedBackgroundPaths({
                         damping: 20,
                         duration: 0.8
                       }}
-                      className="inline-block text-transparent bg-clip-text 
-                                          bg-gradient-to-br from-slate-900 via-slate-700 to-slate-500
-                                          dark:from-white dark:via-slate-200 dark:to-slate-400
-                                          hover:from-blue-600 hover:to-purple-600 dark:hover:from-blue-400 dark:hover:to-purple-400
-                                          transition-all duration-700 cursor-default"
+                      className="inline-block text-white transition-all duration-700 cursor-default"
                       whileHover={{ scale: 1.05, y: -2 }}
                     >
                       {letter}
@@ -303,7 +299,7 @@ export default function EnhancedBackgroundPaths({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
-              className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 font-light tracking-wide max-w-2xl mx-auto mt-8"
+              className="text-xl md:text-2xl text-white font-light tracking-wide max-w-2xl mx-auto mt-8"
             >
               Transformez votre idée en application mobile performante ou site web professionnel avec une UX fluide, une architecture scalable et un design axé conversion.
             </motion.p>

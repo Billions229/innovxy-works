@@ -17,31 +17,24 @@ function Calendar({
   ...props
 }: CalendarProps) {
   const defaultClassNames = {
-    months: "relative flex flex-col sm:flex-row gap-4",
-    month: "w-full",
-    month_caption: "relative mx-10 mb-1 flex h-9 items-center justify-center z-20",
-    caption_label: "text-sm font-medium",
-    nav: "absolute top-0 flex w-full justify-between z-10",
-    button_previous: cn(
-      buttonVariants({ variant: "ghost" }),
-      "size-9 text-muted-foreground/80 hover:text-foreground p-0",
-    ),
-    button_next: cn(
-      buttonVariants({ variant: "ghost" }),
-      "size-9 text-muted-foreground/80 hover:text-foreground p-0",
-    ),
-    weekday: "size-9 p-0 text-xs font-medium text-muted-foreground/80",
-    day_button:
-      "relative flex size-9 items-center justify-center whitespace-nowrap rounded-lg p-0 text-foreground outline-offset-2 group-[[data-selected]:not(.range-middle)]:[transition-property:color,background-color,border-radius,box-shadow] group-[[data-selected]:not(.range-middle)]:duration-150 focus:outline-none group-data-[disabled]:pointer-events-none focus-visible:z-10 hover:bg-accent group-data-[selected]:bg-primary hover:text-foreground group-data-[selected]:text-primary-foreground group-data-[disabled]:text-foreground/30 group-data-[disabled]:line-through group-data-[outside]:text-foreground/30 group-data-[outside]:group-data-[selected]:text-primary-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 group-[.range-start:not(.range-end)]:rounded-e-none group-[.range-end:not(.range-start)]:rounded-s-none group-[.range-middle]:rounded-none group-data-[selected]:group-[.range-middle]:bg-accent group-data-[selected]:group-[.range-middle]:text-foreground",
-    day: "group size-9 px-0 text-sm",
-    range_start: "range-start",
-    range_end: "range-end",
-    range_middle: "range-middle",
-    today:
-      "*:after:pointer-events-none *:after:absolute *:after:bottom-1 *:after:start-1/2 *:after:z-10 *:after:size-[3px] *:after:-translate-x-1/2 *:after:rounded-full *:after:bg-primary [&[data-selected]:not(.range-middle)>*]:after:bg-background [&[data-disabled]>*]:after:bg-foreground/30 *:after:transition-colors",
-    outside: "text-muted-foreground data-selected:bg-accent/50 data-selected:text-muted-foreground",
-    hidden: "invisible",
-    week_number: "size-9 p-0 text-xs font-medium text-muted-foreground/80",
+      months: "flex flex-col sm:flex-row gap-4",
+      month: "space-y-4",
+      caption: "flex justify-center pt-1 relative items-center",
+      caption_label: "text-sm font-medium text-white",
+      nav: "flex items-center",
+      nav_button: "h-7 w-7 bg-slate-800 text-white p-0 opacity-80 hover:opacity-100 inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
+      table: "w-full border-collapse space-y-1",
+      head_row: "flex",
+      head_cell: "text-slate-400 rounded-md w-9 font-normal text-[0.8rem]",
+      row: "flex w-full mt-2",
+      cell: "h-9 w-9 text-center text-sm p-0 relative first:rounded-l-md last:rounded-r-md focus-within:relative focus-within:z-20",
+      day: "relative flex size-9 items-center justify-center whitespace-nowrap rounded-lg p-0 text-white outline-offset-2 focus:outline-none focus-visible:z-10 hover:bg-blue-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-700 group-data-[disabled]:pointer-events-none group-data-[disabled]:text-slate-500 group-data-[disabled]:line-through group-data-[outside]:text-slate-500",
+      day_selected: "bg-blue-700 text-white hover:bg-blue-800 hover:text-white focus:bg-blue-700 focus:text-white",
+      day_today: "bg-slate-700 text-white",
+      day_outside: "text-slate-500 opacity-50",
+      day_disabled: "text-slate-500 opacity-50",
+      day_range_middle: "bg-slate-800 text-white",
+      day_hidden: "invisible",
   };
 
   const mergedClassNames: typeof defaultClassNames = Object.keys(defaultClassNames).reduce(

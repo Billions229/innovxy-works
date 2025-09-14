@@ -102,7 +102,7 @@ function PricingCard({
 }: PricingCardProps) {
 	return (
 		<div className={cn(
-			"relative rounded-2xl border bg-white dark:bg-slate-900 p-8 shadow-sm transition-all hover:shadow-lg",
+			"relative rounded-2xl border bg-slate-800 p-8 shadow-sm transition-all hover:shadow-lg",
 			isPopular && "border-blue-500 ring-2 ring-blue-500/20",
 			className
 		)}>
@@ -120,45 +120,45 @@ function PricingCard({
 						<Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
 					</div>
 				)}
-				<h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+				   <h3 className="text-xl font-bold text-white mb-2">
 					{title}
 				</h3>
 				
-				<div className="mb-4">
-					<span className="text-4xl font-bold text-slate-900 dark:text-white">
-						{price}
-					</span>
-				</div>
+				   <div className="mb-4">
+					   <span className="text-4xl font-bold text-white">
+						   {price}
+					   </span>
+				   </div>
 				
-				{description && (
-					<p className="text-slate-600 dark:text-slate-300 mb-6">
-						{description}
-					</p>
-				)}
+				   {description && (
+					   <p className="text-slate-300 mb-6">
+						   {description}
+					   </p>
+				   )}
 			</div>
 			
-			<ul className="space-y-3 mb-8">
-				{features.map((feature, index) => (
-					<li key={index} className="flex items-start gap-3">
-						<CheckIcon className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-						<span className="text-slate-700 dark:text-slate-300 text-sm">
-							{feature}
-						</span>
-					</li>
-				))}
-			</ul>
+			   <ul className="space-y-3 mb-8">
+				   {features.map((feature, index) => (
+					   <li key={index} className="flex items-start gap-3">
+						   <CheckIcon className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+						   <span className="text-slate-300 text-sm">
+							   {feature}
+						   </span>
+					   </li>
+				   ))}
+			   </ul>
 			
-			<button
-				onClick={onButtonClick}
-				className={cn(
-					"w-full py-3 px-4 rounded-lg font-semibold transition-colors",
-					isPopular
-						? "bg-blue-600 text-white hover:bg-blue-700"
-						: "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700"
-				)}
-			>
-				{buttonText}
-			</button>
+			   <button
+				   onClick={onButtonClick}
+				   className={cn(
+					   "w-full py-3 px-4 rounded-lg font-semibold transition-colors",
+					   isPopular
+						   ? "bg-blue-600 text-white hover:bg-blue-700"
+						   : "bg-slate-700 text-white hover:bg-slate-800"
+				   )}
+			   >
+				   {buttonText}
+			   </button>
 		</div>
 	);
 }
