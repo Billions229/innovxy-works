@@ -50,11 +50,11 @@ export function CalendarBooking({
       {/* Sélection de date et heure */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Calendrier */}
-        <Card className="overflow-hidden">
+        <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700">
           <CardContent className="p-6">
             <div className="flex items-center gap-2 mb-4">
-              <CalendarIcon className="w-5 h-5 text-blue-600" />
-              <h3 className="font-semibold text-slate-900 dark:text-white">
+              <CalendarIcon className="w-5 h-5 text-blue-400" />
+              <h3 className="font-extrabold text-white text-lg">
                 Choisir une date
               </h3>
             </div>
@@ -82,11 +82,11 @@ export function CalendarBooking({
         </Card>
 
         {/* Sélection d'heure */}
-        <Card className="overflow-hidden">
+        <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700">
           <CardContent className="p-6">
             <div className="flex items-center gap-2 mb-4">
-              <Clock className="w-5 h-5 text-blue-600" />
-              <h3 className="font-semibold text-slate-900 dark:text-white">
+              <Clock className="w-5 h-5 text-blue-400" />
+              <h3 className="font-extrabold text-white text-lg">
                 Choisir une heure
               </h3>
             </div>

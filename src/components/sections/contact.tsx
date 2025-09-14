@@ -135,13 +135,13 @@ export function ContactSection() {
               key={feature.title}
               className="text-center p-6 rounded-2xl bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all duration-300"
             >
-              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <feature.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              <div className="w-12 h-12 bg-blue-800 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <feature.icon className="w-6 h-6 text-blue-400" />
               </div>
-              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
+              <h3 className="font-extrabold text-white mb-2">
                 {feature.title}
               </h3>
-              <p className="text-sm text-slate-600 dark:text-slate-300">
+              <p className="text-sm text-white/90">
                 {feature.desc}
               </p>
             </div>

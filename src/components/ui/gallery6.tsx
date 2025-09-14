@@ -132,30 +132,30 @@ const Gallery6 = ({
                     {/* Content */}
                     <div className="p-6">
                       {/* Type Badge */}
-                      <div className="inline-block px-3 py-1 text-xs font-semibold text-blue-600 bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 rounded-full mb-3">
+                      <div className="inline-block px-3 py-1 text-xs font-bold text-blue-400 bg-blue-800 rounded-full mb-3 shadow">
                         {item.type}
                       </div>
 
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      <h3 className="text-xl font-extrabold text-white mb-2 group-hover:text-blue-400 transition-colors drop-shadow">
                         {item.title}
                       </h3>
 
                       {/* Summary */}
-                      <p className="text-slate-600 dark:text-slate-300 text-sm mb-4 line-clamp-3">
+                      <p className="text-slate-300 text-sm mb-4 line-clamp-3">
                         {item.summary}
                       </p>
 
                       {/* Technologies */}
                       <div className="mb-4">
-                        <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Technologies:</p>
-                        <p className="text-sm text-slate-700 dark:text-slate-300">{item.technologies}</p>
+                        <p className="text-xs font-semibold text-blue-300 mb-1">Technologies :</p>
+                        <p className="text-sm text-white">{item.technologies}</p>
                       </div>
 
                       {/* Results */}
                       <div className="mb-6">
-                        <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Résultats:</p>
-                        <p className="text-sm font-medium text-green-600 dark:text-green-400">{item.results}</p>
+                        <p className="text-xs font-semibold text-green-300 mb-1">Résultats :</p>
+                        <p className="text-sm font-bold text-green-400">{item.results}</p>
                       </div>
 
                       {/* CTA Button */}
@@ -213,11 +213,11 @@ const Gallery6 = ({
         {/* Call to Action Section */}
         <div className="text-center mt-16 max-w-4xl mx-auto">
           <div className="bg-slate-800 rounded-2xl p-8 border border-slate-600">
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4 drop-shadow">
               Prêt à transformer votre idée en succès ?
             </h3>
-            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
-              Rejoignez nos clients satisfaits et donnez vie à votre projet avec notre expertise technique et notre approche centrée sur les résultats.
+            <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
+              <span className="text-blue-300 font-semibold">Rejoignez nos clients satisfaits</span> et donnez vie à votre projet avec notre <span className="text-purple-300 font-semibold">expertise technique</span> et notre approche centrée sur les <span className="text-green-300 font-semibold">résultats</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
