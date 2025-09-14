@@ -9,44 +9,44 @@ import Gallery6 from "@/components/ui/gallery6"
 export function ProjetsRecentsSection() {
   const projets = [
     {
-      id: "boutikplus",
-      title: "BoutikPlus",
-      summary: "Plateforme e-commerce moderne avec gestion des stocks, paiements sécurisés et tableau de bord marchand. Interface intuitive qui a augmenté les conversions de 150%.",
-      url: "https://boutikplus.demo.com",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      type: "Site Web E-commerce",
-      technologies: "Next.js, Stripe, PostgreSQL",
-      results: "+150% conversions, 2000+ produits gérés"
+      id: "manos-tours",
+      title: "Manos Tours",
+      summary: "Manos Tours est un site web de réservation de voyages touristiques qui permet aux utilisateurs de découvrir différentes destinations à travers des circuits organisés. Le site facilite la sélection de guides locaux et offre une expérience de voyage enrichissante.",
+      url: "https://manos-tours.vercel.app/",
+      image: "/manos-tours.png",
+      type: "Site Web de réservation de voyages",
+      technologies: "Next.js, Fedapay, Stripe",
+      results: "+10 clients chaque vacances, +1000 visites par an"
     },
     {
-      id: "techconsult",
-      title: "TechConsult Pro",
-      summary: "Site vitrine professionnel pour cabinet de conseil avec système de prise de rendez-vous, blog intégré et optimisation SEO complète.",
-      url: "https://techconsult.demo.com",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      type: "Site Web Corporate",
-      technologies: "React, Tailwind CSS, Cal.com",
-      results: "+200% trafic organique, 50+ leads/mois"
+      id: "safre-academie",
+      title: "Safre Académie",
+      summary: "Safre Académie est une plateforme éducative qui propose des formations en ligne et des ateliers pour accompagner les étudiants dans leur apprentissage à distance. Le site utilise une gestion d'authentification sécurisée et intègre plusieurs moyens de paiement pour simplifier les inscriptions.",
+      url: "https://safre-academie.vercel.app/",
+      image: "/safre-academie.png",
+      type: "Plateforme éducative en ligne",
+      technologies: "Supabase, Next.js, Clerk, Stripe, CinetPay",
+      results: "Plus de 10 nouveaux étudiants chaque semestre, plus de 15 000 visites par an"
     },
     {
-      id: "dataflow",
-      title: "DataFlow Hub",
-      summary: "Dashboard analytics en temps réel pour PME avec visualisations interactives, rapports automatisés et API pour intégrations tierces.",
-      url: "https://dataflow.demo.com",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      type: "Application Web",
-      technologies: "Vue.js, D3.js, Node.js, MongoDB",
-      results: "500+ utilisateurs actifs, 99.9% uptime"
+      id: "portfolio-abdou",
+      title: "Portfolio Abdou",
+      summary: "Le Portfolio Abdou est un site personnel mettant en valeur les compétences, projets et réalisations professionnelles du propriétaire. Il intègre un design moderne et responsive visant à refléter son expertise en digital learning et UX/UI design.",
+      url: "https://portfolio-abdou.com/",
+      image: "/Portfolio Abdou.png",
+      type: "Site Portfolio Personnel",
+      technologies: "React Js",
+      results: "Met en avant l’expertise et les compétences pour attirer clients et partenaires"
     },
     {
-      id: "fittracker",
-      title: "FitTracker Pro",
-      summary: "App de fitness cross-platform avec suivi d'activités, programmes personnalisés, notifications push et synchronisation cloud.",
-      url: "https://fittracker.demo.com",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-      type: "Application Mobile",
-      technologies: "React Native, Firebase, Redux",
-      results: "10k+ téléchargements, 4.8/5 étoiles"
+      id: "west-africa-tours",
+      title: "West Africa Tours",
+      summary: "West Africa Tours est un blog qui parle des voyages immersifs et authentiques en Afrique de l’Ouest, permettant de découvrir la culture locale, la nature et l’histoire à travers différents types de circuits, du scooter aux tours classiques. Il appartient au site Manos Tours.",
+      url: "https://west-africa-tours.vercel.app/",
+      image: "/West Africa Tours.png",
+      type: "Blog de voyage",
+      technologies: "Next.js, Tailwind CSS",
+      results: "+15 000 visiteurs/mois, +10 nouveaux clients chaque semestre"
     }
   ]
 
