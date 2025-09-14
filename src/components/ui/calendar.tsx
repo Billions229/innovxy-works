@@ -57,11 +57,15 @@ function Calendar({
   );
 
   const defaultComponents = {
-    Chevron: (props: any) => {
+    Chevron: (props: { orientation?: "left" | "right" | "up" | "down"; [key: string]: unknown }) => {
       if (props.orientation === "left") {
         return <ChevronLeft size={16} strokeWidth={2} {...props} aria-hidden="true" />;
       }
-      return <ChevronRight size={16} strokeWidth={2} {...props} aria-hidden="true" />;
+      if (props.orientation === "right") {
+        return <ChevronRight size={16} strokeWidth={2} {...props} aria-hidden="true" />;
+      }
+      // fallback for up/down: use right chevron rotated
+      return <ChevronRight size={16} strokeWidth={2} style={{ transform: props.orientation === "up" ? "rotate(-90deg)" : props.orientation === "down" ? "rotate(90deg)" : undefined }} {...props} aria-hidden="true" />;
     },
   };
 
