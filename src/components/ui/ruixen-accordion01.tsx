@@ -112,14 +112,14 @@ export default function RuixenAccordion01({
   subtitle = "Tout ce que vous devez savoir sur nos services et notre processus"
 }: RuixenAccordion01Props) {
   return (
-    <section className={`py-24 bg-white dark:bg-slate-900 ${className}`}>
+    <section className={`py-24 bg-slate-900 ${className}`}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             {title}
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+          <p className="text-lg text-slate-300 max-w-3xl mx-auto">
             {subtitle}
           </p>
         </div>
@@ -133,20 +133,20 @@ export default function RuixenAccordion01({
                 <AccordionItem
                   key={item.value}
                   value={item.value}
-                  className="border border-slate-200 dark:border-slate-700 rounded-lg px-6 bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                  className="border border-slate-700 rounded-lg px-6 bg-slate-800 hover:bg-slate-700 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-6">
                     <div className="flex items-center gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                        <IconComponent className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <div className="flex-shrink-0 w-10 h-10 bg-blue-900/30 rounded-lg flex items-center justify-center">
+                        <IconComponent className="w-5 h-5 text-blue-400" />
                       </div>
-                      <span className="font-semibold text-slate-900 dark:text-white">
+                      <span className="font-semibold text-white">
                         {item.question}
                       </span>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="pb-6 pt-2">
-                    <div className="ml-14 text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <div className="ml-14 text-slate-300 leading-relaxed">
                       {item.answer}
                     </div>
                   </AccordionContent>
@@ -158,7 +158,7 @@ export default function RuixenAccordion01({
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <p className="text-slate-600 dark:text-slate-300 mb-6">
+          <p className="text-slate-300 mb-6">
             Vous avez d&apos;autres questions ? Parlons-en !
           </p>
           <button
