@@ -51,7 +51,7 @@ export function CalendarBooking({
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Calendrier */}
         <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700 w-full">
-          <CardContent className="p-0">
+          <CardContent className="p-0 bg-slate-800">
             <div className="flex items-center gap-2 mb-4">
               <CalendarIcon className="w-5 h-5 text-blue-400" />
               <h3 className="font-extrabold text-white text-lg">
@@ -83,7 +83,7 @@ export function CalendarBooking({
 
         {/* Sélection d'heure */}
         <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700">
-          <CardContent className="p-6">
+          <CardContent className="p-6 bg-slate-800">
             <div className="flex items-center gap-2 mb-4">
               <Clock className="w-5 h-5 text-blue-400" />
               <h3 className="font-extrabold text-white text-lg">

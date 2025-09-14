@@ -98,10 +98,10 @@ export function FeatureSteps({
                   <div className="flex-1">
                     {/* Step Title */}
                     <h3 className={cn(
-                      "text-xl font-bold mb-2 transition-colors sm:text-white text-white",
+                      "text-xl font-bold mb-2 transition-colors text-white sm:text-white",
                       currentFeature === index
                         ? "text-blue-600 dark:text-blue-400"
-                        : "text-slate-900 dark:text-white"
+                        : "text-white"
                     )}>
                       {feature.step}
                     </h3>
