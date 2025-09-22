@@ -13,13 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "InnovxyWorks - Apps mobiles & Sites web qui boostent votre business",
-  description: "Transformez votre idée en application mobile performante ou site web professionnel avec une UX fluide, une architecture scalable et un design axé conversion.",
-  keywords: ["développement mobile", "création site web", "application mobile", "startup", "UX/UI design", "React Native", "Next.js"],
-  authors: [{ name: "InnovxyWorks" }],
+  title: "InnovyxWorks - Apps mobiles & Sites web qui boostent votre business",
+  description:
+    "Transformez votre idée en application mobile performante ou site web professionnel avec une UX fluide, une architecture scalable et un design axé conversion.",
+  keywords: [
+    "développement mobile",
+    "création site web",
+    "application mobile",
+    "startup",
+    "UX/UI design",
+    "React Native",
+    "Next.js",
+  ],
+  authors: [{ name: "InnovyxWorks" }],
   openGraph: {
-    title: "InnovxyWorks - Apps mobiles & Sites web",
-    description: "Nous créons des applications mobiles et sites web qui boostent votre business",
+    title: "InnovyxWorks - Apps mobiles & Sites web",
+    description:
+      "Nous créons des applications mobiles et sites web qui boostent votre business",
     type: "website",
     locale: "fr_FR",
   },

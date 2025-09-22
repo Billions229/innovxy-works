@@ -1,44 +1,39 @@
-"use client"
+"use client";
 
-import { Github, Twitter, Linkedin, Mail, Phone } from "lucide-react"
-import { Footer } from "@/components/ui/footer"
-import Image from "next/image"
+import { Footer } from "@/components/ui/footer";
+import { Github, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import Image from "next/image";
 
 /**
- * Footer principal pour InnovxyWorks
+ * Footer principal pour InnovyxWorks
  * Contient les liens vers les services, réseaux sociaux et informations légales
  */
 export function InnovxyFooter() {
   return (
     <Footer
       logo={
-        <Image
-          src="/logo.png"
-          alt="InnovxyWorks Logo"
-          width={40}
-          height={40}
-        />
+        <Image src="/logo.png" alt="InnovyxWorks Logo" width={40} height={40} />
       }
-      brandName="InnovxyWorks"
+      brandName="InnovyxWorks"
       socialLinks={[
         {
           icon: <Twitter className="h-5 w-5" />,
-          href: "https://twitter.com/innovxyworks",
+          href: "https://twitter.com/InnovyxWorks",
           label: "Twitter",
         },
         {
           icon: <Linkedin className="h-5 w-5" />,
-          href: "https://linkedin.com/company/innovxyworks",
+          href: "https://linkedin.com/company/InnovyxWorks",
           label: "LinkedIn",
         },
         {
           icon: <Github className="h-5 w-5" />,
-          href: "https://github.com/innovxyworks",
+          href: "https://github.com/InnovyxWorks",
           label: "GitHub",
         },
         {
           icon: <Mail className="h-5 w-5" />,
-          href: "mailto:contact@innovxyworks.com",
+          href: "mailto:contact@InnovyxWorks.com",
           label: "Email",
         },
         {
@@ -61,9 +56,9 @@ export function InnovxyFooter() {
         { href: "/cookies", label: "Politique des cookies" },
       ]}
       copyright={{
-        text: "© 2025 InnovxyWorks",
+        text: "© 2025 InnovyxWorks",
         license: "Tous droits réservés",
       }}
     />
-  )
+  );
 }

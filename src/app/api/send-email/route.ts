@@ -39,8 +39,8 @@ export async function POST(request: NextRequest) {
 
     // Envoi de l'email
     const { data, error } = await resend.emails.send({
-      from: "InnovxyWorks <noreply@innovxyworks.com>",
-      to: ["lokoharris25@gmail.com"],
+      from: "InnovyxWorks <noreply@innovyxworks.com>",
+      to: ["contact@innovyxworks.com"],
       subject: `Nouvelle demande de consultation - ${firstName} ${lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8fafc;">
@@ -118,7 +118,7 @@ export async function POST(request: NextRequest) {
 
             <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
               <p style="color: #64748b; font-size: 14px; margin: 0;">
-                📧 Email envoyé automatiquement depuis le site InnovxyWorks
+                📧 Email envoyé automatiquement depuis le site InnovyxWorks
               </p>
             </div>
           </div>

@@ -16,7 +16,7 @@ import {
 import * as React from "react";
 
 /**
- * Section Contact pour InnovxyWorks
+ * Section Contact pour InnovyxWorks
  * Combine calendrier de réservation et formulaire de contact
  */
 export function ContactSection() {
@@ -93,7 +93,7 @@ export function ContactSection() {
       className="relative py-24 bg-slate-900 text-white overflow-hidden"
     >
       {/* Background decoration */}
-  <div className="absolute inset-0 bg-grid-slate-800/25 [mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]" />
+      <div className="absolute inset-0 bg-grid-slate-800/25 [mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative">
@@ -141,9 +141,7 @@ export function ContactSection() {
               <h3 className="font-extrabold text-white mb-2">
                 {feature.title}
               </h3>
-              <p className="text-sm text-white/90">
-                {feature.desc}
-              </p>
+              <p className="text-sm text-white/90">{feature.desc}</p>
             </div>
           ))}
         </div>
