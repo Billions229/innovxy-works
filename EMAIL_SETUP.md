@@ -48,7 +48,7 @@ to: ['lokoharris25@gmail.com'], // Changez ici
 Dans `src/app/api/send-email/route.ts`, ligne 24 :
 
 ```typescript
-from: 'InnovxyWorks <noreply@innovxyworks.com>', // Changez ici
+from: 'InnovyxWorks <noreply@InnovyxWorks.com>', // Changez ici
 ```
 
 ### Modifier le template email
