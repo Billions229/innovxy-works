@@ -4,7 +4,7 @@ import { Home, Briefcase, FileText, Phone, DollarSign } from 'lucide-react'
 import { NavBar } from "@/components/ui/tubelight-navbar"
 
 /**
- * Composant Navbar principal pour InnovxyWorks
+ * Composant Navbar principal pour InnovyxWorks
  * Navigation avec les sections principales du site
  */
 export function InnovxyNavbar() {

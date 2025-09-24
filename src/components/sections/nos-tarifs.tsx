@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Palette, ShoppingCart, Zap, Smartphone, Building2, Crown } from "lucide-react"
 
 /**
- * Section Nos Tarifs pour InnovxyWorks
+ * Section Nos Tarifs pour InnovyxWorks
  * Affiche les 6 packages selon les spécifications du README.md
  */
 export function NosTarifsSection() {

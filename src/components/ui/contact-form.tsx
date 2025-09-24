@@ -152,7 +152,7 @@ export function ContactForm({
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => handleInputChange("phone", e.target.value)}
-                placeholder="+33 6 12 34 56 78"
+                placeholder="+229 XX XX XX XX"
                 className="h-12 border-2 border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 focus:border-blue-500 focus:ring-0 focus:outline-none transition-all duration-200"
               />
             </div>
@@ -205,11 +205,11 @@ export function ContactForm({
               className="flex h-12 w-full rounded-lg border-2 border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 px-4 py-3 text-sm focus:border-blue-500 focus:ring-0 transition-all duration-200"
             >
               <option value="">Sélectionnez une fourchette</option>
-              <option value="moins-5k">Moins de 5 000€</option>
-              <option value="5k-15k">5 000€ - 15 000€</option>
-              <option value="15k-30k">15 000€ - 30 000€</option>
-              <option value="30k-50k">30 000€ - 50 000€</option>
-              <option value="plus-50k">Plus de 50 000€</option>
+              <option value="300-800">300€ - 800€ (Site Vitrine Pro)</option>
+              <option value="800-1500">800€ - 1 500€ (E-commerce / App Native)</option>
+              <option value="1500-3000">1 500€ - 3 000€ (App Business Pro)</option>
+              <option value="3000-8000">3 000€ - 8 000€ (Plateforme Custom)</option>
+              <option value="plus-8000">Plus de 8 000€ (App Enterprise)</option>
             </select>
           </div>
 

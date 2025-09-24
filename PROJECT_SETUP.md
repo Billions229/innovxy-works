@@ -1,4 +1,4 @@
-# InnovxyWorks - Configuration du Projet
+# InnovyxWorks - Configuration du Projet
 
 ## 🎯 Statut du Projet
 
@@ -116,7 +116,7 @@ Les sections suivantes sont prêtes à être implémentées selon les spécifica
 - ✅ Mode sombre/clair
 - ✅ Architecture modulaire
 
-## 🎯 Contenu InnovxyWorks
+## 🎯 Contenu InnovyxWorks
 
 - **Titre principal**: "Nous créons des apps mobiles & sites web qui boostent votre business"
 - **Sous-titre**: "Transformez votre idée en application mobile performante ou site web professionnel avec une UX fluide, une architecture scalable et un design axé conversion."

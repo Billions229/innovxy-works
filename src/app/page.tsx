@@ -8,7 +8,7 @@ import { InnovxyNavbar } from "@/components/layout/navbar"
 import { InnovxyFooter } from "@/components/layout/footer"
 
 /**
- * Page principale d'InnovxyWorks
+ * Page principale d'InnovyxWorks
  * Contient la navigation, la section hero et le footer
  */
 export default function Home() {

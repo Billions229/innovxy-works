@@ -3,7 +3,7 @@
 import { FeatureSteps } from "@/components/ui/feature-section"
 
 /**
- * Section Notre Processus pour InnovxyWorks
+ * Section Notre Processus pour InnovyxWorks
  * Affiche les 4 étapes du processus selon les spécifications du README.md
  */
 export function ProcessusSection() {

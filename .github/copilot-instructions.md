@@ -1,4 +1,4 @@
-# Copilot Instructions for innovxyworks
+# Copilot Instructions for InnovyxWorks
 
 ## Project Overview
 - This is a Next.js-based showcase website for a startup specializing in mobile and web app development.

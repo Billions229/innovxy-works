@@ -3,7 +3,7 @@
 import EnhancedBackgroundPaths from "@/components/ui/modern-background-paths"
 
 /**
- * Section Hero principale pour InnovxyWorks
+ * Section Hero principale pour InnovyxWorks
  * Utilise le composant EnhancedBackgroundPaths avec le contenu personnalisé
  */
 export function HeroSection() {

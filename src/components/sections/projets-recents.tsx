@@ -3,7 +3,7 @@
 import Gallery6 from "@/components/ui/gallery6"
 
 /**
- * Section Projets Récents pour InnovxyWorks
+ * Section Projets Récents pour InnovyxWorks
  * Affiche les 4 projets principaux selon les spécifications du README.md
  */
 export function ProjetsRecentsSection() {

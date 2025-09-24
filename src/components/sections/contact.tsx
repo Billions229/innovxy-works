@@ -16,7 +16,7 @@ import {
 import * as React from "react";
 
 /**
- * Section Contact pour InnovxyWorks
+ * Section Contact pour InnovyxWorks
  * Combine calendrier de réservation et formulaire de contact
  */
 export function ContactSection() {
@@ -222,15 +222,14 @@ export function ContactSection() {
           {step === "calendar" && (
             <div className="space-y-8">
               <div className="text-center">
-                <h3 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">
-                  Choisissez votre créneau
+                <h3 className="text-3xl font-bold mb-4 text-white">
+                  Sélectionnez une date et une heure qui vous conviennent pour votre consultation gratuite !!
                 </h3>
-                <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                  Sélectionnez une date et une heure qui vous conviennent pour
-                  votre consultation gratuite
+                <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+                  Choisissez le moment idéal pour discuter de votre projet avec nos experts
                 </p>
               </div>
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-slate-700/50 shadow-xl p-6">
+              <div className="bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-700/50 shadow-xl p-6">
                 <CalendarBooking onDateTimeSelect={handleDateTimeSelect} />
               </div>
             </div>

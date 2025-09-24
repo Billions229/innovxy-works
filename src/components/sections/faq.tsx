@@ -3,7 +3,7 @@
 import RuixenAccordion01 from "@/components/ui/ruixen-accordion01"
 
 /**
- * Section FAQ pour InnovxyWorks
+ * Section FAQ pour InnovyxWorks
  * Affiche les questions fréquentes selon les spécifications du README.md
  */
 export function FAQSection() {

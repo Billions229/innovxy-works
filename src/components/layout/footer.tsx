@@ -1,11 +1,11 @@
 "use client"
 
-import { Github, Twitter, Linkedin, Mail, Phone } from "lucide-react"
+import { Github, Twitter, Linkedin, Mail, Phone, Send, Facebook } from "lucide-react"
 import { Footer } from "@/components/ui/footer"
 import Image from "next/image"
 
 /**
- * Footer principal pour InnovxyWorks
+ * Footer principal pour InnovyxWorks
  * Contient les liens vers les services, réseaux sociaux et informations légales
  */
 export function InnovxyFooter() {
@@ -14,36 +14,46 @@ export function InnovxyFooter() {
       logo={
         <Image
           src="/logo.png"
-          alt="InnovxyWorks Logo"
+          alt="InnovyxWorks Logo"
           width={40}
           height={40}
         />
       }
-      brandName="InnovxyWorks"
+      brandName="InnovyxWorks"
       socialLinks={[
         {
           icon: <Twitter className="h-5 w-5" />,
-          href: "https://twitter.com/innovxyworks",
+          href: "#",
           label: "Twitter",
         },
         {
           icon: <Linkedin className="h-5 w-5" />,
-          href: "https://linkedin.com/company/innovxyworks",
+          href: "#",
           label: "LinkedIn",
         },
         {
           icon: <Github className="h-5 w-5" />,
-          href: "https://github.com/innovxyworks",
+          href: "#",
           label: "GitHub",
         },
         {
+          icon: <Send className="h-5 w-5" />,
+          href: "https://t.me/innovyxworks",
+          label: "Telegram",
+        },
+        {
+          icon: <Facebook className="h-5 w-5" />,
+          href: "https://web.facebook.com/profile.php?id=61580934997021",
+          label: "Facebook",
+        },
+        {
           icon: <Mail className="h-5 w-5" />,
-          href: "mailto:contact@innovxyworks.com",
+          href: "mailto:contact@innovyxworks.com",
           label: "Email",
         },
         {
           icon: <Phone className="h-5 w-5" />,
-          href: "tel:+33123456789",
+          href: "tel:+22943053098",
           label: "Téléphone",
         },
       ]}
@@ -61,7 +71,7 @@ export function InnovxyFooter() {
         { href: "/cookies", label: "Politique des cookies" },
       ]}
       copyright={{
-        text: "© 2025 InnovxyWorks",
+        text: "© 2025 InnovyxWorks",
         license: "Tous droits réservés",
       }}
     />

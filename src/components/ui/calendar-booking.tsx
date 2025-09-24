@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar as CalendarIcon, CheckCircle, Clock } from "lucide-react";
+import { Calendar as CalendarIcon, Clock } from "lucide-react";
 import * as React from "react";
 
 import { Button } from "@/components/ui/button";
@@ -9,12 +9,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 interface CalendarBookingProps {
   onDateTimeSelect?: (date: Date, time: string) => void;
-  className?: string;
 }
 
 export function CalendarBooking({
   onDateTimeSelect,
-  className,
 }: CalendarBookingProps) {
   const [date, setDate] = React.useState<Date | undefined>(
     new Date(2025, 0, 15) // 15 janvier 2025
@@ -47,11 +45,11 @@ export function CalendarBooking({
 
   return (
     <div className="space-y-6">
-      {/* Sélection de date et heure */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Calendrier */}
-        <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700 w-full">
-          <CardContent className="p-0 bg-slate-800">
+      {/* Sélection de date et heure - Layout pleine largeur */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Calendrier - Prend 2/3 de l'espace sur desktop */}
+        <Card className="lg:col-span-2 overflow-hidden bg-slate-800 text-white border border-slate-700 w-full">
+          <CardContent className="p-6 bg-slate-800">
             <div className="flex items-center gap-2 mb-4">
               <CalendarIcon className="w-5 h-5 text-blue-400" />
               <h3 className="font-extrabold text-white text-lg">
@@ -71,7 +69,7 @@ export function CalendarBooking({
               modifiersClassNames={{
                 booked: "[&>button]:line-through opacity-50",
               }}
-              className="bg-transparent w-full p-0 [--cell-size:--spacing(10)] md:[--cell-size:--spacing(12)] [&_button]:cursor-pointer"
+              className="bg-transparent w-full p-0 [--cell-size:--spacing(12)] md:[--cell-size:--spacing(14)] [&_button]:cursor-pointer"
               formatters={{
                 formatWeekdayName: (date) => {
                   return date.toLocaleString("fr-FR", { weekday: "short" });
@@ -81,7 +79,7 @@ export function CalendarBooking({
           </CardContent>
         </Card>
 
-        {/* Sélection d'heure */}
+        {/* Sélection d'heure - Prend 1/3 de l'espace sur desktop */}
         <Card className="overflow-hidden bg-slate-800 text-white border border-slate-700">
           <CardContent className="p-6 bg-slate-800">
             <div className="flex items-center gap-2 mb-4">
@@ -91,16 +89,16 @@ export function CalendarBooking({
               </h3>
             </div>
             <div className="max-h-80 overflow-y-auto">
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-2">
                 {timeSlots.map((time) => (
                   <Button
                     key={time}
                     variant={selectedTime === time ? "default" : "outline"}
                     onClick={() => setSelectedTime(time)}
-                    className={`h-10 text-sm font-medium transition-all duration-200 cursor-pointer ${
+                    className={`w-full h-10 text-sm font-medium transition-all duration-200 cursor-pointer ${
                       selectedTime === time
                         ? "bg-blue-600 hover:bg-blue-700 text-white shadow-lg"
-                        : "hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-300"
+                        : "bg-slate-700 hover:bg-slate-600 text-white border-slate-600"
                     }`}
                   >
                     {time}
@@ -111,14 +109,13 @@ export function CalendarBooking({
           </CardContent>
         </Card>
       </div>
-
       {/* Résumé de la sélection */}
       {date && selectedTime && (
         <Card className="bg-slate-800 text-white border border-blue-800">
           <CardContent className="p-6">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-blue-400" />
+                <CalendarIcon className="w-5 h-5 text-blue-400" />
               </div>
               <div>
                 <h4 className="font-extrabold text-white mb-1">
