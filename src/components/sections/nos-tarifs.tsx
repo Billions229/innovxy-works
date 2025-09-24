@@ -217,7 +217,7 @@ export function NosTarifsSection() {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <p className="text-slate-600 dark:text-slate-300 mb-6">
+          <p className="text-slate-700 dark:text-slate-300 mb-6">
             Besoin d&apos;un devis personnalisé ? Parlons de votre projet !
           </p>
           <button

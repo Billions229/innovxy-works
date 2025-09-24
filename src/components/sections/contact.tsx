@@ -241,7 +241,7 @@ export function ContactSection() {
                 <h3 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">
                   Parlez-nous de votre projet
                 </h3>
-                <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
+                <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
                   Quelques informations pour préparer notre échange et vous
                   proposer la meilleure solution
                 </p>

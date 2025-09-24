@@ -174,24 +174,26 @@ const Gallery6 = ({
               ))}
             </CarouselContent>
 
-            {/* Navigation Buttons */}
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-slate-800 text-blue-400 border-blue-700 hover:bg-blue-900 hover:text-white transition-all duration-300"
-              onClick={() => api?.scrollPrev()}
-            >
-              <ArrowLeft className="h-4 w-4" />
-            </Button>
-            
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-slate-800 text-blue-400 border-blue-700 hover:bg-blue-900 hover:text-white transition-all duration-300"
-              onClick={() => api?.scrollNext()}
-            >
-              <ArrowRight className="h-4 w-4" />
-            </Button>
+            {/* Navigation Buttons - Repositionnées en bas à droite */}
+            <div className="absolute bottom-4 right-4 flex gap-2">
+              <Button
+                variant="outline"
+                size="icon"
+                className="h-10 w-10 rounded-full bg-slate-800/90 text-blue-400 border-blue-700 hover:bg-blue-900 hover:text-white transition-all duration-300 backdrop-blur-sm"
+                onClick={() => api?.scrollPrev()}
+              >
+                <ArrowLeft className="h-4 w-4" />
+              </Button>
+
+              <Button
+                variant="outline"
+                size="icon"
+                className="h-10 w-10 rounded-full bg-slate-800/90 text-blue-400 border-blue-700 hover:bg-blue-900 hover:text-white transition-all duration-300 backdrop-blur-sm"
+                onClick={() => api?.scrollNext()}
+              >
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </div>
           </Carousel>
 
           {/* Dots Indicator */}

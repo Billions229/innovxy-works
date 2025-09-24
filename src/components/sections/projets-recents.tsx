@@ -10,12 +10,12 @@ export function ProjetsRecentsSection() {
   const projets = [
     {
       id: "manos-tours",
-      title: "Manos Tours",
+      title: "Trinova Voyages",
       summary:
-        "Manos Tours est un site web de réservation de voyages touristiques qui permet aux utilisateurs de découvrir différentes destinations à travers des circuits organisés. Le site facilite la sélection de guides locaux et offre une expérience de voyage enrichissante.",
-      url: "https://manos-tours.vercel.app/",
+        "Trinova Voyages est un site web de réservation de voyages touristiques qui permet aux utilisateurs de découvrir différentes destinations à travers des circuits organisés. Le site facilite la sélection de guides locaux et offre une expérience de voyage enrichissante.",
+      url: "https://www.trinova-voyages.com/",
       image: "/manos-tours.png",
-      type: "Site Web de réservation de voyages",
+      type: "Site Web de réservation de voyages pour le tourisme Ouest Africain",
       technologies: "Next.js, Fedapay, Stripe",
       results: "+10 clients chaque vacances, +1000 visites par an",
     },
@@ -47,7 +47,7 @@ export function ProjetsRecentsSection() {
       id: "west-africa-tours",
       title: "West Africa Tours",
       summary:
-        "West Africa Tours est un blog qui parle des voyages immersifs et authentiques en Afrique de l’Ouest, permettant de découvrir la culture locale, la nature et l’histoire à travers différents types de circuits, du scooter aux tours classiques. Il appartient au site Manos Tours.",
+        "West Africa Tours est un blog qui parle des voyages immersifs et authentiques en Afrique de l’Ouest, permettant de découvrir la culture locale, la nature et l’histoire à travers différents types de circuits, du scooter aux tours classiques. Il appartient au site Trinova Voyages.",
       url: "https://west-africa-tours.vercel.app/",
       image: "/West Africa Tours.png",
       type: "Blog de voyage",
