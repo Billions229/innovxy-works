@@ -69,7 +69,7 @@ export function ContactForm({
 
   return (
     <Card
-  className={`bg-slate-800/90 backdrop-blur-sm border-slate-700/50 shadow-2xl ${className}`}
+      className={`bg-slate-800/90 backdrop-blur-sm border-slate-700/50 shadow-2xl ${className}`}
     >
       <CardHeader className="pb-6">
         <CardTitle className="flex items-center gap-3 text-2xl font-bold">
@@ -100,9 +100,11 @@ export function ContactForm({
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* Informations personnelles */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-3">
-              <label className="text-sm font-semibold flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <User className="w-4 h-4 text-blue-600" />
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                <span className="w-4 h-4 text-blue-600 inline-flex items-center justify-center">
+                  <User className="w-4 h-4" />
+                </span>
                 Prénom *
               </label>
               <Input
@@ -113,8 +115,9 @@ export function ContactForm({
                 required
               />
             </div>
-            <div className="space-y-3">
-              <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                <span className="w-4 h-4 inline-block" />
                 Nom *
               </label>
               <Input
@@ -129,9 +132,11 @@ export function ContactForm({
 
           {/* Contact */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-3">
-              <label className="text-sm font-semibold flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <Mail className="w-4 h-4 text-blue-600" />
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                <span className="w-4 h-4 text-blue-600 inline-flex items-center justify-center">
+                  <Mail className="w-4 h-4" />
+                </span>
                 Email *
               </label>
               <Input
@@ -143,9 +148,11 @@ export function ContactForm({
                 required
               />
             </div>
-            <div className="space-y-3">
-              <label className="text-sm font-semibold flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <Phone className="w-4 h-4 text-blue-600" />
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                <span className="w-4 h-4 text-blue-600 inline-flex items-center justify-center">
+                  <Phone className="w-4 h-4" />
+                </span>
                 Téléphone
               </label>
               <Input
@@ -160,9 +167,11 @@ export function ContactForm({
 
           {/* Entreprise et projet */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-3">
-              <label className="text-sm font-semibold flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <Building className="w-4 h-4 text-blue-600" />
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                <span className="w-4 h-4 text-blue-600 inline-flex items-center justify-center">
+                  <Building className="w-4 h-4" />
+                </span>
                 Entreprise
               </label>
               <Input
@@ -172,8 +181,9 @@ export function ContactForm({
                 className="h-12 border-2 border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 focus:border-blue-500 focus:ring-0 focus:outline-none transition-all duration-200"
               />
             </div>
-            <div className="space-y-3">
-              <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                <span className="w-4 h-4 inline-block" />
                 Type de projet
               </label>
               <select
@@ -195,8 +205,9 @@ export function ContactForm({
           </div>
 
           {/* Budget */}
-          <div className="space-y-3">
-            <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+          <div className="space-y-2">
+            <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+              <span className="w-4 h-4 inline-block" />
               Budget estimé
             </label>
             <select
@@ -206,16 +217,23 @@ export function ContactForm({
             >
               <option value="">Sélectionnez une fourchette</option>
               <option value="300-800">300€ - 800€ (Site Vitrine Pro)</option>
-              <option value="800-1500">800€ - 1 500€ (E-commerce / App Native)</option>
-              <option value="1500-3000">1 500€ - 3 000€ (App Business Pro)</option>
-              <option value="3000-8000">3 000€ - 8 000€ (Plateforme Custom)</option>
+              <option value="800-1500">
+                800€ - 1 500€ (E-commerce / App Native)
+              </option>
+              <option value="1500-3000">
+                1 500€ - 3 000€ (App Business Pro)
+              </option>
+              <option value="3000-8000">
+                3 000€ - 8 000€ (Plateforme Custom)
+              </option>
               <option value="plus-8000">Plus de 8 000€ (App Enterprise)</option>
             </select>
           </div>
 
           {/* Message */}
-          <div className="space-y-3">
-            <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+          <div className="space-y-2">
+            <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+              <span className="w-4 h-4 inline-block" />
               Décrivez votre projet *
             </label>
             <Textarea

@@ -221,13 +221,15 @@ export function ContactSection() {
             <div className="space-y-8">
               <div className="text-center">
                 <h3 className="text-3xl font-bold mb-4 text-white">
-                  Sélectionnez une date et une heure qui vous conviennent pour votre consultation gratuite !!
+                  Sélectionnez une date et une heure qui vous conviennent pour
+                  votre consultation gratuite !!
                 </h3>
                 <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-                  Choisissez le moment idéal pour discuter de votre projet avec nos experts
+                  Choisissez le moment idéal pour discuter de votre projet avec
+                  nos experts
                 </p>
               </div>
-              <div className="bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-700/50 shadow-xl p-6">
+              <div className="bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-700/50 shadow-xl md:p-0">
                 <CalendarBooking onDateTimeSelect={handleDateTimeSelect} />
               </div>
             </div>
