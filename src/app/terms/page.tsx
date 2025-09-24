@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowLeft, FileText, Scale, AlertTriangle, CheckCircle, Mail, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Conditions d'utilisation - InnovyxWorks",
-  description: "Conditions d'utilisation des services InnovyxWorks - Règles et conditions pour l'utilisation de nos services de développement.",
-  keywords: ["conditions d'utilisation", "termes", "contrat", "services"],
+  title: "Conditions d&apos;utilisation - InnovyxWorks",
+  description: "Conditions d&apos;utilisation des services InnovyxWorks - Règles et conditions pour l&apos;utilisation de nos services de développement.",
+  keywords: ["conditions d&apos;utilisation", "termes", "contrat", "services"],
 };
 
 export default function TermsPage() {
@@ -19,7 +19,7 @@ export default function TermsPage() {
             className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
         </div>
       </header>
@@ -33,7 +33,7 @@ export default function TermsPage() {
               <FileText className="w-8 h-8 text-blue-400" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Conditions d'utilisation
+              Conditions d&apos;utilisation
             </h1>
             <p className="text-xl text-slate-300">
               Dernière mise à jour : 24 septembre 2025
@@ -48,8 +48,8 @@ export default function TermsPage() {
                 Acceptation des conditions
               </h2>
               <p className="text-slate-300 leading-relaxed">
-                En utilisant les services d'InnovyxWorks, vous acceptez d'être lié par ces 
-                conditions d'utilisation. Si vous n'acceptez pas ces conditions, 
+                En utilisant les services d&apos;InnovyxWorks, vous acceptez d&apos;être lié par ces
+                conditions d&apos;utilisation. Si vous n&apos;acceptez pas ces conditions,
                 veuillez ne pas utiliser nos services.
               </p>
             </div>
@@ -64,8 +64,8 @@ export default function TermsPage() {
                   <p>InnovyxWorks propose les services suivants :</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Développement de sites web responsives</li>
-                    <li>Création d'applications mobiles natives</li>
-                    <li>Développement d'applications web progressives</li>
+                    <li>Création d&apos;applications mobiles natives</li>
+                    <li>Développement d&apos;applications web progressives</li>
                     <li>Consultation et conseil en développement</li>
                     <li>Maintenance et support technique</li>
                     <li>Optimisation SEO et performance</li>
@@ -119,7 +119,7 @@ export default function TermsPage() {
                     <li>Un acompte de 30% est demandé avant le début des travaux</li>
                     <li>Le solde est payable à la livraison du projet</li>
                     <li>Les retards de paiement peuvent entraîner des pénalités</li>
-                    <li>Aucun remboursement n'est possible une fois les travaux commencés</li>
+                    <li>Aucun remboursement n&apos;est possible une fois les travaux commencés</li>
                   </ul>
                 </div>
               </section>
@@ -131,13 +131,13 @@ export default function TermsPage() {
                 </h2>
                 <div className="space-y-4 text-slate-300">
                   <p>
-                    InnovyxWorks s'engage à fournir des services de qualité professionnelle. 
+                    InnovyxWorks s&apos;engage à fournir des services de qualité professionnelle.
                     Cependant, notre responsabilité est limitée au montant des sommes versées 
                     pour le projet concerné.
                   </p>
                   <p>
                     Nous ne saurions être tenus responsables des dommages indirects, 
-                    pertes de profits ou interruptions d'activité.
+                    pertes de profits ou interruptions d&apos;activité.
                   </p>
                 </div>
               </section>
@@ -159,7 +159,7 @@ export default function TermsPage() {
                 <div className="space-y-4 text-slate-300">
                   <p>
                     Chaque partie peut résilier le contrat en cas de manquement grave 
-                    de l'autre partie, après mise en demeure restée sans effet pendant 15 jours.
+                    de l&apos;autre partie, après mise en demeure restée sans effet pendant 15 jours.
                   </p>
                   <p>
                     En cas de résiliation par le client, les sommes déjà versées restent acquises 
@@ -182,7 +182,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-bold mb-4">Contact</h2>
                 <div className="space-y-4 text-slate-300">
                   <p>
-                    Pour toute question concernant ces conditions d'utilisation :
+                    Pour toute question concernant ces conditions d&apos;utilisation :
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 

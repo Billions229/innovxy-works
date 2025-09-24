@@ -4,7 +4,7 @@ import { ArrowLeft, Cookie, Settings, BarChart3, Shield, Mail, Phone } from "luc
 
 export const metadata: Metadata = {
   title: "Politique en matière de cookies - InnovyxWorks",
-  description: "Politique en matière de cookies d'InnovyxWorks - Comment nous utilisons les cookies pour améliorer votre expérience.",
+  description: "Politique en matière de cookies d&apos;InnovyxWorks - Comment nous utilisons les cookies pour améliorer votre expérience.",
   keywords: ["cookies", "politique cookies", "tracking", "analytics"],
 };
 
@@ -19,7 +19,7 @@ export default function CookiesPage() {
             className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
         </div>
       </header>
@@ -45,7 +45,7 @@ export default function CookiesPage() {
             <div className="bg-slate-800/50 rounded-xl p-8 mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
                 <Cookie className="w-6 h-6 text-blue-400" />
-                Qu'est-ce qu'un cookie ?
+                Qu&apos;est-ce qu&apos;un cookie ?
               </h2>
               <p className="text-slate-300 leading-relaxed">
                 Un cookie est un petit fichier texte stocké sur votre appareil lorsque vous 
@@ -65,7 +65,7 @@ export default function CookiesPage() {
                     <h3 className="text-xl font-semibold text-white mb-2">Cookies essentiels</h3>
                     <p className="text-slate-300">
                       Ces cookies sont nécessaires au fonctionnement du site. Ils permettent 
-                      la navigation de base et l'accès aux zones sécurisées. Sans ces cookies, 
+                      la navigation de base et l&apos;accès aux zones sécurisées. Sans ces cookies,
                       certaines fonctionnalités ne peuvent pas être fournies.
                     </p>
                     <ul className="list-disc list-inside mt-2 text-slate-400">
@@ -83,7 +83,7 @@ export default function CookiesPage() {
                     </p>
                     <ul className="list-disc list-inside mt-2 text-slate-400">
                       <li>Google Analytics</li>
-                      <li>Mesure d'audience</li>
+                      <li>Mesure d&apos;audience</li>
                       <li>Temps de chargement des pages</li>
                     </ul>
                   </div>
@@ -97,7 +97,7 @@ export default function CookiesPage() {
                     <ul className="list-disc list-inside mt-2 text-slate-400">
                       <li>Préférences utilisateur</li>
                       <li>Formulaires pré-remplis</li>
-                      <li>Paramètres d'affichage</li>
+                      <li>Paramètres d&apos;affichage</li>
                     </ul>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function CookiesPage() {
                     <li>Bloquer tous les cookies</li>
                     <li>Accepter uniquement les cookies de première partie</li>
                     <li>Supprimer les cookies existants</li>
-                    <li>Recevoir une notification avant qu'un cookie soit stocké</li>
+                    <li>Recevoir une notification avant qu&apos;un cookie soit stocké</li>
                   </ul>
 
                   <div className="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-4 mt-4">
@@ -171,7 +171,7 @@ export default function CookiesPage() {
                       <tbody className="text-sm">
                         <tr className="border-b border-slate-700">
                           <td className="py-2">Cookies de session</td>
-                          <td className="py-2">Jusqu'à la fermeture du navigateur</td>
+                          <td className="py-2">Jusqu&apos;à la fermeture du navigateur</td>
                         </tr>
                         <tr className="border-b border-slate-700">
                           <td className="py-2">Cookies de préférences</td>

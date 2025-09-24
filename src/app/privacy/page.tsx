@@ -4,7 +4,7 @@ import { ArrowLeft, Shield, Eye, Lock, Database, Mail, Phone } from "lucide-reac
 
 export const metadata: Metadata = {
   title: "Politique de confidentialité - InnovyxWorks",
-  description: "Politique de confidentialité d'InnovyxWorks - Comment nous collectons, utilisons et protégeons vos données personnelles.",
+  description: "Politique de confidentialité d&apos;InnovyxWorks - Comment nous collectons, utilisons et protégeons vos données personnelles.",
   keywords: ["politique de confidentialité", "protection des données", "RGPD", "vie privée"],
 };
 
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
         </div>
       </header>
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
                 Introduction
               </h2>
               <p className="text-slate-300 leading-relaxed">
-                InnovyxWorks s'engage à protéger votre vie privée et vos données personnelles. 
+                InnovyxWorks s&apos;engage à protéger votre vie privée et vos données personnelles.
                 Cette politique de confidentialité explique comment nous collectons, utilisons, 
                 stockons et protégeons vos informations lorsque vous utilisez nos services.
               </p>
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
                     <li>Nom et prénom</li>
                     <li>Adresse e-mail</li>
                     <li>Numéro de téléphone</li>
-                    <li>Nom de l'entreprise</li>
+                    <li>Nom de l&apos;entreprise</li>
                     <li>Informations sur votre projet</li>
                     <li>Budget estimé</li>
                   </ul>
@@ -121,11 +121,11 @@ export default function PrivacyPage() {
                 <div className="space-y-4 text-slate-300">
                   <p>Conformément au RGPD, vous disposez des droits suivants :</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Droit d'accès :</strong> Obtenir une copie de vos données personnelles</li>
+                    <li><strong>Droit d&apos;accès :</strong> Obtenir une copie de vos données personnelles</li>
                     <li><strong>Droit de rectification :</strong> Corriger des données inexactes</li>
-                    <li><strong>Droit à l'effacement :</strong> Demander la suppression de vos données</li>
+                    <li><strong>Droit à l&apos;effacement :</strong> Demander la suppression de vos données</li>
                     <li><strong>Droit à la portabilité :</strong> Récupérer vos données dans un format structuré</li>
-                    <li><strong>Droit d'opposition :</strong> Vous opposer au traitement de vos données</li>
+                    <li><strong>Droit d&apos;opposition :</strong> Vous opposer au traitement de vos données</li>
                   </ul>
                 </div>
               </section>

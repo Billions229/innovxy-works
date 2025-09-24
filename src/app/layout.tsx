@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://innovyxworks.com'),
   title: "InnovyxWorks - Développement Web & Mobile au Bénin | Apps & Sites Web Professionnels",
   description: "Agence de développement web et mobile au Bénin. Création d'applications mobiles, sites web e-commerce et plateformes sur mesure pour entreprises africaines. Devis gratuit.",
   keywords: [

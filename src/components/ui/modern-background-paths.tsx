@@ -227,7 +227,7 @@ export default function EnhancedBackgroundPaths({
       setCurrentPattern((prev) => (prev + 1) % patterns.length)
     }, 12000)
     return () => clearInterval(interval)
-  }, [])
+  }, [patterns.length])
 
   const renderPattern = () => {
     switch (currentPattern) {
