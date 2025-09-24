@@ -1,6 +1,6 @@
+import { StructuredData } from "@/components/seo/structured-data";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { StructuredData } from "@/components/seo/structured-data";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,14 +14,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://innovyxworks.com'),
-  title: "InnovyxWorks - Développement Web & Mobile au Bénin | Apps & Sites Web Professionnels",
-  description: "Agence de développement web et mobile au Bénin. Création d'applications mobiles, sites web e-commerce et plateformes sur mesure pour entreprises africaines. Devis gratuit.",
+  metadataBase: new URL("https://innovyxworks.com"),
+  title:
+    "InnovyxWorks - Développement Web & Mobile au Bénin | Apps & Sites Web Professionnels",
+  description:
+    "Agence de développement web et mobile au Bénin. Création d'applications mobiles, sites web e-commerce et plateformes sur mesure pour entreprises africaines. Devis gratuit.",
   keywords: [
-    "développement web Bénin", "création site web Cotonou", "application mobile Afrique",
-    "agence web Bénin", "développeur Cotonou", "site e-commerce Bénin",
-    "app mobile Afrique de l'Ouest", "développement logiciel Bénin",
-    "création site internet Cotonou", "agence digitale Bénin"
+    "développement web Bénin",
+    "création site web Cotonou",
+    "application mobile Afrique",
+    "agence web Bénin",
+    "développeur Cotonou",
+    "site e-commerce Bénin",
+    "app mobile Afrique de l'Ouest",
+    "développement logiciel Bénin",
+    "création site internet Cotonou",
+    "agence digitale Bénin",
   ],
   authors: [{ name: "InnovyxWorks", url: "https://innovyxworks.com" }],
   creator: "InnovyxWorks",
@@ -39,7 +47,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "InnovyxWorks - Développement Web & Mobile au Bénin",
-    description: "Agence spécialisée en développement d'applications mobiles et sites web pour entreprises africaines. Basée au Bénin, nous servons toute l'Afrique de l'Ouest.",
+    description:
+      "Agence spécialisée en développement d'applications mobiles et sites web pour entreprises africaines. Basée au Bénin, nous servons toute l'Afrique de l'Ouest.",
     type: "website",
     locale: "fr_FR",
     url: "https://innovyxworks.com",
@@ -56,7 +65,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "InnovyxWorks - Développement Web & Mobile au Bénin",
-    description: "Agence de développement web et mobile au Bénin pour entreprises africaines",
+    description:
+      "Agence de développement web et mobile au Bénin pour entreprises africaines",
     images: ["/og-image.jpg"],
   },
   alternates: {
@@ -66,7 +76,12 @@ export const metadata: Metadata = {
     "geo.region": "BJ",
     "geo.placename": "Cotonou, Bénin",
     "geo.position": "6.3703;2.3912",
-    "ICBM": "6.3703, 2.3912",
+    ICBM: "6.3703, 2.3912",
+  },
+  icons: {
+    icon: "/favicon.jpg",
+    shortcut: "/favicon.jpg",
+    apple: "/favicon.jpg",
   },
 };
 
@@ -78,6 +93,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="dark">
       <head>
+        <link rel="icon" href="/favicon.jpg" />
         <StructuredData />
       </head>
       <body

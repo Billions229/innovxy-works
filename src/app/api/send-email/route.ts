@@ -39,8 +39,8 @@ export async function POST(request: NextRequest) {
 
     // Envoi de l'email
     const { data, error } = await resend.emails.send({
-      from: "InnovyxWorks <noreply@InnovyxWorks.com>",
-      to: ["lokoharris25@gmail.com"],
+      from: "InnovyxWorks <noreply@innovyxworks.com>",
+      to: ["contact@innovyxworks.com"],
       subject: `Nouvelle demande de consultation - ${firstName} ${lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8fafc;">
