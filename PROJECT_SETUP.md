@@ -7,6 +7,7 @@
 ## 📋 Composants Implémentés
 
 ### ✅ 1. Composant Navbar
+
 - **Fichier**: `src/components/ui/tubelight-navbar.tsx`
 - **Wrapper**: `src/components/layout/navbar.tsx`
 - **Fonctionnalités**:
@@ -16,6 +17,7 @@
   - Navigation vers les sections principales
 
 ### ✅ 2. Section Hero
+
 - **Fichier**: `src/components/ui/hero-background.tsx`
 - **Wrapper**: `src/components/sections/hero.tsx`
 - **Fonctionnalités**:
@@ -25,6 +27,7 @@
   - Design responsive et moderne
 
 ### ✅ 3. Composant Footer
+
 - **Fichier**: `src/components/ui/footer.tsx`
 - **Wrapper**: `src/components/layout/footer.tsx`
 - **Fonctionnalités**:
@@ -127,6 +130,7 @@ Les sections suivantes sont prêtes à être implémentées selon les spécifica
 Pour pousser vers GitHub, vous devrez configurer l'authentification avec votre token GitHub personnel ou SSH.
 
 **Commandes pour pousser vers GitHub** :
+
 ```bash
 git push -u origin main
 ```

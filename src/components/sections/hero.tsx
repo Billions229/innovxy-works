@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import EnhancedBackgroundPaths from "@/components/ui/modern-background-paths"
+import EnhancedBackgroundPaths from "@/components/ui/modern-background-paths";
 
 /**
  * Section Hero principale pour InnovyxWorks
@@ -9,9 +9,7 @@ import EnhancedBackgroundPaths from "@/components/ui/modern-background-paths"
 export function HeroSection() {
   return (
     <div id="hero">
-      <EnhancedBackgroundPaths
-        title=" Votre business, boosté digitalement"
-      />
+      <EnhancedBackgroundPaths title=" Votre business, boosté digitalement" />
     </div>
-  )
+  );
 }
